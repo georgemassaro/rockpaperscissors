@@ -7,6 +7,7 @@ body {
 .title {
   font-size: 30px;
   font-weight: bold;
+  text-align: center;
 }
 
  .move-icon {
@@ -16,9 +17,11 @@ body {
 .move-button{
   background-color: transparent;
   border: 3px solid white;
-  width: 120px;
-  height: 120px;
-  border-radius: 60px;
+  width: 25vw;
+  height: 25vw;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 600px;
   margin-right: 10px;
   cursor: pointer;
 }
@@ -26,11 +29,11 @@ body {
 .result {
   font-size: 25px;
   font-weight: bold;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .score {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .reset-score-button {
@@ -39,4 +42,40 @@ body {
   font-size: 15px;
   padding: 8px 15px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 2px solid white;
+}
+
+.info{
+  padding: 0;
+  height: 10vh;
+}
+
+@media only screen and (min-width: 1200px){
+  .move-button{
+    background-color: transparent;
+    border: 3px solid white;
+    width: 25vw;
+    height: 25vw;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 600px;
+    margin-right: 50px;
+    cursor: pointer;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border: 2px solid white;
+  }
 }
