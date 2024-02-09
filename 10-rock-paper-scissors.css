@@ -51,7 +51,6 @@ div {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border: 2px solid white;
 }
 
 .info{
